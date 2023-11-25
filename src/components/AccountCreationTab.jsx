@@ -1,4 +1,3 @@
-// AccountCreationTab.js
 import React, { useState } from 'react';
 import { addUser } from './UserData';
 
@@ -18,8 +17,8 @@ const AccountCreationTab = () => {
     e.preventDefault();
     const newUser = {
       ...formData,
-      id: Math.floor(Math.random() * 1000) + 1, // Generate a random ID (you can replace this with your logic)
-      creationDate: new Date().toLocaleString(), // Use the current timestamp as the creation date
+      id: Math.floor(Math.random() * 1000) + 1,
+      creationDate: new Date().toLocaleString(),
     };
 
     addUser(newUser);

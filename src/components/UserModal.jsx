@@ -1,10 +1,9 @@
 // UserModal.js
 import React from 'react';
-import './UserModal.css'; // Import the new CSS file
+import './UserModal.css'; 
 
 const UserModal = ({ user, onClose, onGenerateReport }) => {
   const handleGenerateReport = () => {
-    // Call the provided callback to generate a report
     onGenerateReport(user);
   };
 
